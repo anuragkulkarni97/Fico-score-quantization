@@ -20,10 +20,19 @@ Rating Grade Assignment: Each borrower is assigned a rating from R1 (best credit
 
 5-Panel Visualization: A publication-quality chart covering FICO distribution by default status, PD per rating bucket, population per bucket, boundary comparison, and the objective score elbow curve, all generated from a single Python script.
 
-Results:
+Results: 5-Bucket Log-Likelihood DP Solution
 
-5-Bucket Log-Likelihood DP Solution
-RatingFICO RangeProbability of DefaultPopulationR1 — Best Credit721 – 8516.4%1, 255R2694 - 72019.9%858R3651 – 69334.5%1, 350R4604 - 65061.5%1, 050R5 - Highest Risk484 – 60387.9%487
+Rating     ,       FICO Range      ,    Probability of Default    ,    Population
+
+R1 - Best Credit ,   721 – 851      ,         6.4%               ,        1255
+
+R2        ,        694 - 720         ,      19.9%               ,       858
+
+R3        ,        651 – 693         ,      34.5%             ,         1350 
+
+R4       ,         604 - 650        ,     61.5%              ,        1050
+
+R5 - Highest Risk, 484 – 603       ,        87.9%           ,            487
 
 Tech Stack:
 
