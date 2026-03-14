@@ -29,12 +29,6 @@ Tech Stack:
 
 Python 3.x
 
-
-
-\[View Dashboard](fico\_risk\_buckets.html)
-
-
-
 NumPy: For dynamic programming table construction and array operations.
 
 SciPy: For statistical helper functions used in the log-likelihood computation.
