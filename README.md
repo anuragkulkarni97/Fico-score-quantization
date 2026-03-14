@@ -1,4 +1,4 @@
-FICO Score Quantization: 
+FICO Score Quantization:
 
 Optimal Bucket Construction
 
@@ -6,7 +6,7 @@ A comprehensive credit risk project to find the optimal FICO score boundaries th
 
 The model is applied to a real loan dataset from the JPMorgan Chase Quantitative Research, producing a clean 5-tier rating system where default probability ranges from 6.4% (best credit) to 87.9% (highest risk), with near-perfect monotonic separation between every tier.
 
-Key Features: 
+Key Features:
 
 MSE Minimization Bucketing: Groups FICO scores into buckets by minimizing the within-bucket variance of default rates, ensuring that borrowers assigned the same rating tier have similar risk profiles.
 
@@ -25,9 +25,14 @@ Results:
 5-Bucket Log-Likelihood DP Solution
 RatingFICO RangeProbability of DefaultPopulationR1 — Best Credit721 – 8516.4%1, 255R2694 - 72019.9%858R3651 – 69334.5%1, 350R4604 - 65061.5%1, 050R5 - Highest Risk484 – 60387.9%487
 
-Tech Stack: 
+Tech Stack:
 
 Python 3.x
+
+
+
+\[View Dashboard](fico\_risk\_buckets.html)
+
 
 
 NumPy: For dynamic programming table construction and array operations.
@@ -38,19 +43,20 @@ Matplotlib: For generating the 5-panel visualization output.
 
 Pandas: For loading and preprocessing the loan dataset.
 
-How to Run: 
+How to Run:
 
 Clone this repository to your local machine.
 
 Install the required libraries: pip install numpy scipy matplotlib pandas
 
-Run the script: python fico_quantization.py
+Run the script: python fico\_quantization.py
 
 The script will print the rating tier boundaries and default rates to the terminal, and save the 5-panel chart as a PNG file.
 
 
-Future Work: 
-This project provides a strong foundation for production credit rating systems. 
+
+Future Work:
+This project provides a strong foundation for production credit rating systems.
 
 Future improvements could include:
 
@@ -69,3 +75,4 @@ Built by Anurag Kulkarni as part of the JPMorgan Chase Quantitative Research.
 Connect on LinkedIn: https://www.linkedin.com/in/anurag-kulkarni97/
 
 GitHub: AnalyticalAnurag97
+
